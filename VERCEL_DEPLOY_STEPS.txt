@@ -1,0 +1,30 @@
+CENTRA Countdown - Vite Source Project
+
+Use this ZIP for Vercel deployment.
+
+What to upload to GitHub:
+- Upload the extracted files/folders, not the ZIP itself.
+- Make sure package.json is visible in the GitHub repository root.
+
+Important files:
+- package.json
+- package-lock.json
+- index.html
+- vite.config.ts
+- src/
+
+Vercel settings:
+- Framework Preset: Vite
+- Install Command: npm install
+- Build Command: npm run build
+- Output Directory: dist
+
+Countdown logic location:
+- src/app/App.tsx
+
+Logic included:
+- Start date: current date
+- Default end date: 31-Dec-2026
+- Excludes Fridays and Saturdays
+- Excludes specific listed dates
+- Avoids double exclusion when a specific excluded date is Friday/Saturday
